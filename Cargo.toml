@@ -1,0 +1,13 @@
+[package]
+name = "unicode"
+version = "0.0.1"
+description = "Fetch and build libunicode"
+authors = ["Dawid Ciężarkiewicz <dpc@dpc.pw>"]
+build = "build.rs"
+
+[lib]
+name = "unicode"
+path = "./rust/src/libunicode/lib.rs"
+
+[dependencies.core]
+git = "https://github.com/dpc/libcore-git.rs.git"
